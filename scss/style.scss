@@ -794,7 +794,6 @@ input[type="radio"].visually-hidden {
 
 .about-us-footer p:nth-of-type(2) {
   margin-top: 7px;
-  width: 270px;
 }
 
 .files-form-footer {
@@ -2121,13 +2120,13 @@ input[type="radio"].visually-hidden {
   left: 0;
   content: '';
   width: 42px;
-  height: 33px;
+  height: 40px;
   background-image: url('../img/menu.svg');
 }
 
 .header-nav-background-bottom {
   top: 61px;
-  left: 10px;
+  left: 115px;
   z-index: 14;
 }
 
@@ -2237,6 +2236,19 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
 }
 
+.title-text-top {
+  margin-top: 0px;
+  margin-left:20px;
+}
+
+.title-text-bottom {
+  margin-left: 0px;
+}
+
+.btn-slider-one {
+  margin-left: 155px;
+}
+
 .main-one .main-one-left {
   display: none;
 }
@@ -2256,7 +2268,12 @@ input[type="radio"].visually-hidden {
 
 .tile-on-new-pages li {
   width: 100%;
-  max-width: 300px;
+  max-width: 333px;
+}
+
+.main-two .tile-on-new-pages li:nth-child(5),
+.main-two .tile-on-new-pages li:last-child {
+  display: none;
 }
 
 .tile-pages {
@@ -2266,12 +2283,18 @@ input[type="radio"].visually-hidden {
 
 .tile-pages li {
   width: 100%;
-  max-width: 300px;
+  max-width: 255px;
+}
+
+.main-three .tile-pages li:nth-child(4),
+.main-three .tile-pages li:nth-child(5),
+.main-three .tile-pages li:nth-child(6) {
+  display: none;
 }
 
 .main-five .overflow-block-object {
   width: 100%;
-  max-width: 768px;
+  max-width: 705px;
 }
 
 .main-five .overflow-block-object li {
@@ -2282,6 +2305,40 @@ input[type="radio"].visually-hidden {
 .footer-main-block {
   width: 100%;
   max-width: 768px;
+}
+
+.about-us-footer {
+  width: 100%;
+  max-width: 240px;
+}
+
+.files-form-footer {
+  width: 100%;
+  max-width: 240px;
+}
+
+.to-send-footer {
+  margin-left: 77px;
+}
+
+.footer-address {
+  width: 100%;
+  max-width: 255px;
+}
+
+.footer-address li:nth-child(2) {
+  position: relative;
+}
+
+.footer-address li:nth-child(2)::before {
+  position: absolute;
+  top: 26px;
+  left: 5px;
+  content: '';
+  width: 27px;
+  height: 21px;
+  background-image: url('../img/email.svg');
+  background-repeat: no-repeat;
 }
 
 .swiper-container {

@@ -11887,3 +11887,12 @@ iframe.uk-cover {
     page-break-after: avoid;
   }
 }
+
+@media screen and (device-width: 768px) {
+  .uk-position-bottom {
+  width: 400px;
+  bottom: 0;
+  left: 0;
+  top: 0;
+}
+}
