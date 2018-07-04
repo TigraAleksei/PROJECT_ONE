@@ -11,7 +11,8 @@ body {
   padding: 0;
   color: #000000;
   background-color: #f5f6f8;
-  box-sizing: border-box; 
+  //box-sizing: border-box; 
+  //overflow-x: hidden;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -148,11 +149,6 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
-.one-slider {
-  position: relative;
-  left: -1.1px;
-}
-
 .overflow-one-slider {
   @extend .block-auto;
   max-width: 100%;
@@ -160,17 +156,28 @@ input[type="radio"].visually-hidden {
   height: auto;
 }
 
+//============= зачем? ===========
+.overflow-one-slider ul,
+.uk-slider-items,
+.uk-grid {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  box-sizing: border-box;
+}
+
+//============= зачем? ===========
+
 .overflow-one-slider ul li {
   width: 100%;
   max-width: 1900px;
   height: auto;
-  @extend .block-auto;
-  padding-right: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
 .uk-panel img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -1074,6 +1081,7 @@ input[type="radio"].visually-hidden {
   display: none;
   @extend .block-flex;
   @extend .block-auto;
+  width: 100%;
   width: 1025px;
   padding-top: 40px;
   padding-left: 40px;
@@ -1119,7 +1127,8 @@ input[type="radio"].visually-hidden {
 
 .block-one,
 .block-two {
-  width: 155px;
+  width: 100%;
+  max-width: 155px;
 }
 
 .block-one h5,
@@ -1154,7 +1163,8 @@ input[type="radio"].visually-hidden {
 
 .contents-image {
   @extend .block-flex;
-  width: 632px;
+  width: 100%;
+  max-width: 632px;
   box-sizing: border-box;
 }
 
@@ -1921,6 +1931,7 @@ input[type="radio"].visually-hidden {
   max-width: 1366px;
   height: auto;
 }
+
 .overflow-one-slider ul li {
   width: 100%;
   max-width: 1366px;
@@ -2086,19 +2097,31 @@ input[type="radio"].visually-hidden {
 
 .header-nav-background-top {
   background-color: #7d8792;
+   width: 100%;
+  max-width: 748px;
+  box-sizing: border-box;
 }
 
 .header-top .header-nav-top {
-  width: 100%;
-  max-width: 768px;
-}
-.navigation-site {
-  width: 100%;
-  width: 960px;
+  margin-bottom: 0px;
 }
 
-.header-nav-bottom .navigation-site > li > a {
-  padding: 17px 20px 17px 20px;
+.logo li {
+  display: none;
+}
+
+.logo {
+  position: relative;
+}
+
+.logo::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 42px;
+  height: 33px;
+  background-image: url('../img/menu.svg');
 }
 
 .header-nav-background-bottom {
@@ -2107,31 +2130,85 @@ input[type="radio"].visually-hidden {
   z-index: 14;
 }
 
+.header-nav-background-bottom .header-nav-bottom {
+  display: none;
+  z-index: -2;
+}
+
 .header-nav-bottom .navigation-site {
-  width: 755px;
+  width: 748px;
 }
 
 .header-nav-bottom .navigation-site > li > a {
   font-size: 14px;
-  padding: 7px 10px 7px 10px;
+  padding: 7px 9px 7px 9px;
 }
 
 .navigation-site .popup-services {
   position: absolute;
-  top: 55px;
-  left: -180px;
-  width: 768px;
+  top: 37px;
+  left: -200px;
+  width: 746px;
   padding-bottom: 333px;
 }
 
 .navigation-site .controls-services {
   width: 100%;
-  max-width: 760px;
+  max-width: 748px;
 }
 
 .navigation-site .controls-services > li > a {
-  padding: 7px 15px 7px 15px;
+  padding: 7px 10px 7px 10px;
 }
+
+.services-pages-center {
+  width: 100%;
+  width: 740px;
+  margin: 0;
+  padding: 0;
+  padding-left: 40px;
+}
+
+.block-one,
+.block-two {
+  display: none;
+}
+
+.controls-services li:nth-child(1) .services-pages-center {
+  top: 37px;
+  left: 0px;
+}
+
+.controls-services li:nth-child(2) .services-pages-center {
+  top: 37px;
+  left: -118px;
+}
+
+.controls-services li:nth-child(3) .services-pages-center {
+  top: 37px;
+  left: -193px;
+}
+
+.controls-services li:nth-child(4) .services-pages-center {
+  top: 37px;
+  left: -283px;
+}
+
+.controls-services li:nth-child(5) .services-pages-center {
+  top: 37px;
+  left: -403px;
+}
+
+.controls-services li:nth-child(6) .services-pages-center {
+  top: 37px;
+  left: -520px;
+}
+
+.controls-services li:nth-child(7) .services-pages-center {
+  top: 37px;
+  left: -623px;
+}
+
 .overflow-one-slider {
   max-width: 100%;
   max-width: 768px;
@@ -2213,3 +2290,4 @@ input[type="radio"].visually-hidden {
 }
 .main-five {overflow: hidden;}
 }
+//*{outline: 1px solid red}
