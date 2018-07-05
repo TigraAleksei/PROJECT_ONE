@@ -9,10 +9,7 @@ $('#owl-carousel-top').owlCarousel({
         0:{
             items:1
         },
-        768:{
-            items:2
-        },
-        1024:{
+        800:{
             items:2
         },
         1500:{
@@ -30,9 +27,9 @@ $('#owl-carousel-bottom').owlCarousel({
     nav:true,
     responsive:{
         0:{
-            items:2
+            items:1
         },
-        768:{
+        800:{
             items:2
         },
         1000:{
