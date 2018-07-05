@@ -84,9 +84,7 @@ input[type="radio"].visually-hidden {
 .mm-navbar {
   border: none;
 }
-.mm-listview > li:not(.mm-divider):after {
-  display: none;
-}
+
 
 .mmenu-absolute {
   position: absolute;
@@ -2147,6 +2145,12 @@ input[type="radio"].visually-hidden {
 .btn-support,
 .arrow-top {
   display: none;
+}
+
+.arrow-top svg {
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 15px;
 }
 
 /* .mh-head {
