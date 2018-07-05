@@ -9,7 +9,6 @@ $('#owl-carousel-top').owlCarousel({
         0:{
             items:1
         },
-
         768:{
             items:2
         },

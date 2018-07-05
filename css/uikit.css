@@ -8635,13 +8635,13 @@ iframe.uk-cover {
 /* Utility
  ========================================================================== */
 .uk-position-relative {
-  position: relative !important;
+  position: relative;
 }
 .uk-position-absolute {
-  position: absolute !important;
+  position: absolute;
 }
 .uk-position-fixed {
-  position: fixed !important;
+  position: fixed;
 }
 .uk-position-z-index {
   z-index: 1;
