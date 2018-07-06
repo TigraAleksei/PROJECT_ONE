@@ -4,11 +4,25 @@
 	<meta charset="UTF-8">
 	<title>Project1</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.0/jquery.mmenu.all.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.mhead.css">	
+	<link rel="stylesheet" type="text/css" href="css/uikit-rtl.css">
+	<link rel="stylesheet" type="text/css" href="css/uikit.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/7.0.0/jquery.mmenu.all.js"></script>
 </head>
 <body>
-	<header>
+	<header class="header-top-gamburger">
+		<div id="page" class="page-mmenu-device">
+			<div class="mh-head first">
+				<span class="mh-btns-left">
+					<a class="mh-hamburger" href="#menu"></a>
+				</span>
+				<span class="mh-text">Супер компания</span>
+			</div>
+			<div class="content">
 		<section class="header-top">
 			<h2 class="visually-hidden">Навигация по сайту</h2>
 			<div class="header-nav-background-top">
@@ -27,7 +41,7 @@
 			<div class="header-nav-background-bottom">
 				<nav class="container header-nav-bottom">
 					<ul class="navigation-site">
-						<li><a href="index.html">Главная</a></li>
+						<li><a class="current-header-nav" href="#">Главная</a></li>
 						<li><a href="#">О Компании</a></li>
 						<li><a href="services.html">Услуги</a>
 							<div class="popup-services">
@@ -285,11 +299,103 @@
 						<li><a href="portfolio.html">Портфолио</a></li>
 						<li><a href="#">Поставщики</a></li>
 						<li><a href="#">Скидки и акции</a></li>
-						<li><a class="current-header-nav" href="#">Контакты</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
 					</ul>
 				</nav>
 			</div>
 		</section>
+		<section class="container one-slider">
+			<h2 class="visually-hidden">Демонстрация наших работ</h2>
+		<div class="uk-position-relative uk-visible-toggle uk-light overflow-one-slider" uk-slider="clsActivated: uk-transition-active; center: true; autoplay: true; autoplay-interval: 4000; velocity: 1">
+			<ul class="uk-slider-items uk-grid">
+				<li class="uk-width-3-4">
+					<div class="uk-panel">
+						<img src="img/top-background.jpg" width="1920" height="767" alt="Контент">
+						<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom overlay-slider-left">
+							<div>
+								<h3 class="title-text-top">Офисные перегородки от производителя №1</h3>
+								<p class="title-text-bottom">NAYADA входит в число лидеров в сфере проектирования и изготовления систем интерьерных перегородок. Также в ассортименте компании представлены двери, офисная мебель, стойки ресепшен.</p>
+							</div>
+							<a class="btn-slider-one" href="#">Подробнее</a>
+						</div>
+					</div>
+				</li>
+				<li class="uk-width-3-4">
+					<div class="uk-panel">
+						<img src="img/top-background.jpg" width="1920" height="767" alt="Контент">
+						<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom overlay-slider-left">
+							<div>
+								<h3 class="title-text-top">Офисные перегородки от производителя №2</h3>
+								<p class="title-text-bottom">NAYADA входит в число лидеров в сфере проектирования и изготовления систем интерьерных перегородок. Также в ассортименте компании представлены двери, офисная мебель, стойки ресепшен.</p>
+							</div>
+							<a class="btn-slider-one" href="#">Подробнее</a>
+						</div>
+					</div>
+				</li>
+				<li class="uk-width-3-4">
+					<div class="uk-panel">
+						<img src="img/top-background.jpg" width="1920" height="767" alt="Контент">
+						<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom overlay-slider-left">
+							<div>
+								<h3 class="title-text-top">Офисные перегородки от производителя №3</h3>
+								<p class="title-text-bottom">NAYADA входит в число лидеров в сфере проектирования и изготовления систем интерьерных перегородок. Также в ассортименте компании представлены двери, офисная мебель, стойки ресепшен.</p>
+							</div>
+							<a class="btn-slider-one" href="#">Подробнее</a>
+						</div>
+					</div>
+				</li>
+				<li class="uk-width-3-4">
+					<div class="uk-panel">
+						<img src="img/top-background.jpg" width="1920" height="767" alt="Контент">
+						<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom overlay-slider-left">
+							<div>
+								<h3 class="title-text-top">Офисные перегородки от производителя №4</h3>
+								<p class="title-text-bottom">NAYADA входит в число лидеров в сфере проектирования и изготовления систем интерьерных перегородок. Также в ассортименте компании представлены двери, офисная мебель, стойки ресепшен.</p>
+							</div>
+							<a class="btn-slider-one" href="#">Подробнее</a>
+						</div>
+					</div>
+				</li>
+				<li class="uk-width-3-4">
+					<div class="uk-panel">
+						<img src="img/top-background.jpg" width="1920" height="767" alt="Контент">
+						<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom overlay-slider-left">
+							<div>
+								<h3 class="title-text-top">Офисные перегородки от производителя №5</h3>
+								<p class="title-text-bottom">NAYADA входит в число лидеров в сфере проектирования и изготовления систем интерьерных перегородок. Также в ассортименте компании представлены двери, офисная мебель, стойки ресепшен.</p>
+							</div>
+							<a class="btn-slider-one" href="#">Подробнее</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="uk-position-center-left uk-position-small uk-hidden-hover" uk-slidenav-previous uk-slider-item="previous"></div>
+			<div class="uk-position-center-right uk-position-small uk-hidden-hover" uk-slidenav-next uk-slider-item="next"></div>
+		</div>
+		</section>
+		</div>
+			<nav id="menu" class="mmenu-absolute">
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="#">О Компании</a></li>
+					<li><span>Услуги</span>
+						<ul>
+							<li><a href="#">Перегородки</a></li>
+							<li><a href="#">Двери</a></li>
+							<li><a href="#">Зеркала</a></li>
+							<li><a href="#">Теплый лофт</a></li>
+							<li><a href="#">Ограждения</a></li>
+							<li><a href="#">Лестницы</a></li>
+							<li><a href="#">Дизайн-металл</a></li>
+						</ul>
+					</li>
+					<li><a href="portfolio.html">Портфолио</a></li>
+					<li><a href="#">Поставщик</a></li>
+					<li><a href="#">Скидки и акции</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 	<main class="main-contacts">		
 		<section class="container breadcrumbs-block">
@@ -367,6 +473,18 @@
 			</ul>
 			</div>
 		</section>
-	</footer>
+	</footer>		
+	<ul class="btn-support">
+		<li><a href="#"><img src="img/loading.png" width="36" height="36" alt="Загрузка"></a></li>
+		<li><a href="#"><img src="img/calculator.png" width="36" height="35" alt="Калькулятор"></a></li>
+		<li><a href="#"><img src="img/support.png" width="29" height="35" alt="Оператор"></a></li>
+		<li><a href="#"><img src="img/message.png" width="35" height="28" alt="Помощь онлайн"></a></li>
+	</ul>
+	<div class="arrow-top" id="toTop"><svg xmlns="http://www.w3.org/2000/svg" width="20.6" height="11.22" viewBox="0 0 20.6 11.22"><path fill="#ffffff" d="M1598.32,6800.73l8.85,8.46a1.342,1.342,0,0,1,0,1.95,1.507,1.507,0,0,1-2.04,0l-7.83-7.49-7.83,7.49a1.5,1.5,0,0,1-2.03,0,1.326,1.326,0,0,1,0-1.95l8.85-8.46a1.455,1.455,0,0,1,1.01-.4A1.507,1.507,0,0,1,1598.32,6800.73Z" transform="translate(-1587.03 -6800.34)"/></svg></div>
+	<script type="text/javascript" src="js/jquery.mhead.js"></script>
+	<script type="text/javascript" src="js/mmenu.js"></script>
+	<script src="js/uikit.js"></script>
+	<script src="js/uikit-icons.js"></script>
+	<script src="js/arrow-topjs.js"></script>
 </body>
 </html>
