@@ -944,7 +944,6 @@ input[type="radio"].visually-hidden {
 }
 
 .to-send-footer {
-  //width: 114px;
   border: none;
   border-radius: 3px;
   background-color: #798c99;
@@ -980,12 +979,18 @@ input[type="radio"].visually-hidden {
   margin-bottom: 10px;
 }
 
+.footer-address li a,
 .footer-address li p {
   width: 100%;
   @extend .block-zero;
   margin: 23px 17px 20px 30px;
   font-size: 16px;
   color: #5d6775;
+  text-align: left;
+}
+
+.footer-address li a {
+  margin-left: 0px;
 }
 
 .footer-address li:last-child {
@@ -2478,6 +2483,15 @@ input[type="radio"].visually-hidden {
   left: 10px;
   z-index: 2;
 }
+
+.about-us-footer {
+  display: none;
+}
+
+.files-form-footer {
+  width: 400px;
+}
+
 }
 
 @media screen and (max-device-width: 640px) {
