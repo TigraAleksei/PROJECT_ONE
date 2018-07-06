@@ -85,8 +85,8 @@ input[type="radio"].visually-hidden {
   background-color: #373d49;
   color: #fff;
   display: none;
-  padding-top: 30px;
-  padding-bottom: 30px; }
+  padding-top: 70px;
+  padding-bottom: 70px; }
 
 .mh-text {
   font-size: 30px;
@@ -95,15 +95,13 @@ input[type="radio"].visually-hidden {
 
 .hamburger-box {
   width: 150px;
-  height: 150px;
-  outline: 1px solid red; }
+  height: 150px; }
 
 .mh-head .hamburger-inner,
 .mh-head .hamburger-inner:after,
 .mh-head .hamburger-inner:before {
   width: 150px;
   height: 10px;
-  outline: 1px solid red;
   background: #fff; }
 
 .hamburger-box .hamburger-inner {
@@ -1054,7 +1052,7 @@ input[type="radio"].visually-hidden {
 
 .arrow-top svg {
   margin-left: 15px;
-  margin-top: 15px; }
+  margin-top: 19px; }
 
 .arrow-top:hover,
 .arrow-top:focus {
@@ -2157,7 +2155,16 @@ input[type="radio"].visually-hidden {
   .btn-support {
     display: none; }
   .arrow-top {
-    position: absolute; }
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    right: 95px;
+    bottom: 60px; }
+  .arrow-top svg {
+    width: 40px;
+    height: 40px;
+    margin-left: 22px;
+    margin-top: 17px; }
   .uk-position-bottom {
     width: 1110px;
     -webkit-box-sizing: border-box;
@@ -2201,7 +2208,8 @@ input[type="radio"].visually-hidden {
     max-width: 950px; }
   .tile-on-new-pages li {
     width: 100%;
-    max-width: 444px; }
+    max-width: 444px;
+    margin-bottom: 40px; }
   .main-two .tile-on-new-pages li:nth-child(5),
   .main-two .tile-on-new-pages li:last-child {
     display: none; }
@@ -2224,11 +2232,24 @@ input[type="radio"].visually-hidden {
     width: 100%;
     max-width: 990px; }
   .breadcrumbs {
-    margin-left: 140px; }
+    margin-left: 40px; }
+  .breadcrumbs a {
+    font-size: 40px; }
+  .pagination-list {
+    width: 255px;
+    margin-right: 35px; }
+  .pagination-list li a,
+  .pagination-list li:first-child a,
+  .pagination-list li:last-child a {
+    width: 60px;
+    height: 60px;
+    font-size: 35px; }
+  .pagination-list li:first-child a svg,
+  .pagination-list li:last-child a svg {
+    width: 40px;
+    height: 40px; }
   .main-contacts .breadcrumbs {
     margin-left: 70px; }
-  .pagination-list {
-    margin-right: 125px; }
   .contacts-map li:first-child .contacts-img-map {
     left: 0px; }
   .contacts-map li:last-child {
@@ -2247,7 +2268,8 @@ input[type="radio"].visually-hidden {
     width: 100%;
     max-width: 777px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    margin-bottom: 90px; }
   .gallery-bottom {
     padding: 15px 25px 15px 25px; }
   .tile-on-new-pages .title-tile {
@@ -2269,4 +2291,6 @@ input[type="radio"].visually-hidden {
     font-size: 28px;
     line-height: 30px; }
   .main-three .tile-pages li:not(:first-child) {
-    display: none; } }
+    display: none; }
+  .pagination-list {
+    margin-right: 120px; } }
