@@ -74,8 +74,9 @@ input[type="radio"].visually-hidden {
   padding-bottom: 30px;
 }
 .mh-text {
-  font-size: 16px;
+  font-size: 30px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .hamburger-box {
@@ -111,17 +112,17 @@ input[type="radio"].visually-hidden {
 
 .mmenu-absolute {
   width: 100%;
-  max-width: 920px;
+  max-width: 888px;
   position: absolute;
   z-index: 25;
   height: 100%;
-  //max-height: 482px;
 }
 
 .mmenu-absolute ul li {
   font-size: 60px;
   line-height: 100px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .mmenu-absolute ul li:first-child {
@@ -2339,8 +2340,9 @@ input[type="radio"].visually-hidden {
 }
 
 .title-text-bottom {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 200;
+  line-height: 35px;
   margin-top: 40px;
   margin-left: 0px;
   margin-right: 57px;
@@ -2367,24 +2369,6 @@ input[type="radio"].visually-hidden {
   padding-left: 0;
 }
 
-.main-five .two-slider li {
-   width: 700px;
-   height: auto;
-   background-color: red;
-}
-
-.main-five .two-slider li img {
-  width: 100%;
-  height: auto;
-}
-
-.two-slider .two-slider-text {
-  width: 700px;
-   height: 400px;
-   //width: 232px;
-   //height: 267px;
-}
-
 .controls-services-one,
 .controls-services-three {
   top: 60px;
@@ -2398,12 +2382,12 @@ input[type="radio"].visually-hidden {
 
 .tile-on-new-pages {
   width: 100%;
-  max-width: 768px;
+  max-width: 950px;
 }
 
 .tile-on-new-pages li {
   width: 100%;
-  max-width: 333px;
+  max-width: 444px;
 }
 
 .main-two .tile-on-new-pages li:nth-child(5),
@@ -2413,12 +2397,12 @@ input[type="radio"].visually-hidden {
 
 .tile-pages {
   width: 100%;
-  max-width: 768px;
+  max-width: 950px;
 }
 
 .tile-pages li {
   width: 100%;
-  max-width: 255px;
+  max-width: 300px;
 }
 
 .main-three .tile-pages li:nth-child(4),
@@ -2438,7 +2422,7 @@ input[type="radio"].visually-hidden {
 
 .swiper-container {
   width: 100%;
- max-width: 768px;
+ max-width: 990px;
 }
 
 .breadcrumbs {
@@ -2466,5 +2450,56 @@ input[type="radio"].visually-hidden {
 }
 
 @media screen and (max-device-width: 640px) {
-  
+
+  .main-two h2,
+  .main-three h2 {
+    font-size: 50px;
+  }
+
+  .tile-pages li,
+  .tile-on-new-pages li {
+  width: 100%;
+  max-width: 777px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-bottom {
+  padding: 15px 25px 15px 25px;
+}
+
+.tile-on-new-pages .title-tile {
+  font-size: 30px;
+}
+
+.tile-on-new-pages .btn-tile {
+  font-size: 24px;
+  padding: 10px 14px 10px 14px;
+}
+
+.gallery-bottom address {
+  margin-top: 12px;
+  font-size: 20px;
+}
+  .main-two .tile-on-new-pages li:not(:nth-child(1)):not(:nth-child(2)) {
+  display: none;
+}
+
+.tile-pages li p img {
+  width: 250px;
+  height: auto;
+}
+
+.tile-pages li h3 {
+  font-size: 35px;
+}
+
+.tile-pages li p {
+  font-size: 28px;
+  line-height: 30px;
+}
+
+.main-three .tile-pages li:not(:first-child) {
+  display: none;
+}
 }
