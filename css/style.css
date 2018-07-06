@@ -925,12 +925,11 @@ input[type="radio"].visually-hidden {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 300px;
-  height: 385px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  width: 300px;
+  height: 385px; }
 
 .footer-address li {
+  width: 300px;
   background-color: rgba(189, 195, 198, 0.6);
   display: -webkit-box;
   display: -webkit-flex;
@@ -2267,7 +2266,34 @@ input[type="radio"].visually-hidden {
   .about-us-footer {
     display: none; }
   .files-form-footer {
-    width: 400px; } }
+    width: 465px; }
+  .name-input-footer,
+  .email-writeus-input-footer,
+  .tel-writeus-input-footer,
+  .write-letter-textarea-footer {
+    padding: 14px 14px 14px 20px;
+    font-size: 26px; }
+  .write-letter-textarea-footer {
+    height: 140px; }
+  .file-label-footer {
+    margin-left: 170px; }
+  .to-send-footer {
+    font-size: 26px;
+    padding: 8px 17px;
+    margin-left: 170px; }
+  .footer-address {
+    width: 400px;
+    height: 520px; }
+  .footer-address li {
+    width: 400px; }
+  .footer-address li a,
+  .footer-address li p {
+    font-size: 26px; }
+  .footer-address li:last-child {
+    height: 200px; }
+  .footer-main h6,
+  .files-form-footer h4 {
+    font-size: 24px; } }
 
 @media screen and (max-device-width: 640px) {
   .main-two h2,
