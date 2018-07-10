@@ -2201,6 +2201,47 @@ input[type="radio"].visually-hidden {
     max-width: 768px;
     margin-left: auto;
     margin-right: auto; }
+  .main-five h2,
+  .main-four h2,
+  .main-two h2,
+  .main-three h2 {
+    font-size: 50px; }
+  .main-one-right > h3 {
+    font-size: 50px;
+    font-weight: 200;
+    color: #939ba4;
+    text-align: center;
+    border: none; }
+  .top-center h5 {
+    font-size: 27px;
+    line-height: 30px; }
+  .top-center p {
+    font-size: 23px;
+    line-height: 25px; }
+  .bottom-face p {
+    font-size: 26px;
+    line-height: 30px;
+    width: 250px;
+    height: 98px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis; }
+  .bottom-face time {
+    font-size: 24px; }
+  .line-slider-object li h6 {
+    font-size: 30px; }
+  .line-slider-object li h5 {
+    font-size: 28px;
+    line-height: 30px; }
+  .line-slider-object li p {
+    font-size: 25px;
+    line-height: 28px;
+    height: 85px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis; }
+  .line-slider-object li .slider-object-btn {
+    text-transform: uppercase; }
   .two-slider {
     padding-left: 0; }
   .controls-services-one,
@@ -2306,33 +2347,6 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase; } }
 
 @media screen and (max-device-width: 640px) {
-  .main-five h2,
-  .main-four h2,
-  .main-two h2,
-  .main-three h2 {
-    font-size: 50px; }
-  .main-one-right > h3 {
-    font-size: 50px;
-    font-weight: 200;
-    color: #939ba4;
-    text-align: center;
-    border: none; }
-  .top-center h5 {
-    font-size: 27px;
-    line-height: 30px; }
-  .top-center p {
-    font-size: 23px;
-    line-height: 25px; }
-  .bottom-face p {
-    font-size: 26px;
-    line-height: 30px;
-    width: 250px;
-    height: 98px;
-    overflow: hidden;
-    -o-text-overflow: ellipsis;
-       text-overflow: ellipsis; }
-  .bottom-face time {
-    font-size: 24px; }
   .tile-pages li,
   .tile-on-new-pages li {
     width: 100%;
@@ -2352,20 +2366,6 @@ input[type="radio"].visually-hidden {
     font-size: 20px; }
   .main-two .tile-on-new-pages li:not(:nth-child(1)):not(:nth-child(2)) {
     display: none; }
-  .line-slider-object li h6 {
-    font-size: 30px; }
-  .line-slider-object li h5 {
-    font-size: 28px;
-    line-height: 30px; }
-  .line-slider-object li p {
-    font-size: 25px;
-    line-height: 28px;
-    height: 85px;
-    overflow: hidden;
-    -o-text-overflow: ellipsis;
-       text-overflow: ellipsis; }
-  .line-slider-object li .slider-object-btn {
-    text-transform: uppercase; }
   .tile-pages li p img {
     width: 250px;
     height: auto; }
@@ -2374,7 +2374,7 @@ input[type="radio"].visually-hidden {
   .tile-pages li p {
     font-size: 28px;
     line-height: 30px; }
-  .main-three .tile-pages li:not(:first-child) {
+  .main-three .tile-pages li:not(:nth-child(1)):not(:nth-child(2)) {
     display: none; }
   .pagination-list {
     margin-right: 120px; } }
