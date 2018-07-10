@@ -2331,6 +2331,8 @@ input[type="radio"].visually-hidden {
     overflow: hidden;
     -o-text-overflow: ellipsis;
        text-overflow: ellipsis; }
+  .bottom-face time {
+    font-size: 24px; }
   .tile-pages li,
   .tile-on-new-pages li {
     width: 100%;
