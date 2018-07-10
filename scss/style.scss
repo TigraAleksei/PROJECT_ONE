@@ -2327,8 +2327,8 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 85px;
   height: 85px;
-  right: 95px;
-  bottom: 60px;
+  right: 120px;
+  bottom: 159px;
 }
 
 .arrow-top svg {
@@ -2365,9 +2365,11 @@ input[type="radio"].visually-hidden {
 
 .btn-slider-one {
   width: 194px;
+  font-size: 26px;
   font-weight: 300;
   padding: 14px 10px 14px 10px;
   margin-left: 380px;
+  text-transform: uppercase;
 }
 
 .main-one .main-one-left {
@@ -2492,8 +2494,6 @@ input[type="radio"].visually-hidden {
   width: 465px;
 }
 
-
-
 .name-input-footer,
 .email-writeus-input-footer,
 .tel-writeus-input-footer,
@@ -2507,7 +2507,7 @@ input[type="radio"].visually-hidden {
 }
 
 .file-label-footer {
-  margin-left: 170px;
+  margin-left: 133px;
 }
 
 .to-send-footer {
@@ -2537,14 +2537,56 @@ input[type="radio"].visually-hidden {
   .files-form-footer h4 {
     font-size: 24px;
   }
+
+.file-label-footer,
+.footer-address li span {
+  font-size: 23px;
+}
+
+.footer-services {
+  max-width: 960px;
+}
+
+.footer-services li a {
+  font-size: 18px;
+  text-transform: uppercase;
+}
 }
 
 @media screen and (max-device-width: 640px) {
 
-  .main-two h2,
-  .main-three h2 {
-    font-size: 50px;
-  }
+.main-five h2,
+.main-four h2,
+.main-two h2,
+.main-three h2 {
+  font-size: 50px;
+}
+
+  .main-one-right > h3 {
+  font-size: 50px;
+  font-weight: 200;
+  color: #939ba4;
+  text-align: center;
+  border: none;
+}
+
+.top-center h5 {
+  font-size: 27px;
+  line-height: 30px;
+}
+
+.top-center p {
+  font-size: 23px;
+  line-height: 25px;
+}
+.bottom-face p {
+  font-size: 26px;
+  line-height: 30px;
+  width: 250px;
+  height: 98px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
   .tile-pages li,
   .tile-on-new-pages li {
@@ -2574,6 +2616,27 @@ input[type="radio"].visually-hidden {
 }
   .main-two .tile-on-new-pages li:not(:nth-child(1)):not(:nth-child(2)) {
   display: none;
+}
+
+.line-slider-object li h6 {
+  font-size: 30px;
+}
+
+.line-slider-object li h5 {
+  font-size: 28px;
+  line-height: 30px;
+}
+
+.line-slider-object li p {
+  font-size: 25px;
+  line-height: 28px;
+  height: 85px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.line-slider-object li .slider-object-btn {
+  text-transform: uppercase;
 }
 
 .tile-pages li p img {
