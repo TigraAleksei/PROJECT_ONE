@@ -150,8 +150,12 @@ input[type="radio"].visually-hidden {
   border-left: 6px solid #ffffff;
   width: 30px;
   height: 30px;
-  top: 35px;
-  left: 30px; }
+  top: 40px;
+  left: 70px; }
+
+.mm-menu_theme-black .mm-listview .mm-btn_next:after {
+  top: 0px;
+  right: -600px; }
 
 .mm-navbar__title {
   padding-top: 50px;
