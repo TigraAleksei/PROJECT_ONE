@@ -129,6 +129,7 @@ input[type="radio"].visually-hidden {
   border: none; }
 
 .mmenu-absolute {
+  display: none;
   width: 100%;
   max-width: 888px;
   position: absolute;
