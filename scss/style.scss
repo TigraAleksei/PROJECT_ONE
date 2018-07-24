@@ -224,7 +224,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 80px;
   left: calc(50% - 514px);
-  z-index: 14;
+  z-index: 1;
 }
 
 .navigation-site {
@@ -342,7 +342,7 @@ input[type="radio"].visually-hidden {
 }
 .files-form {
   position: relative;
-  z-index: 16;
+  z-index: 1;
   top: -80px;
   right: 0;
   display: flex;
@@ -1790,6 +1790,220 @@ input[type="radio"].visually-hidden {
 .main-services,
 .main-contacts {
   padding-bottom: 70px;
+}
+
+.files-helping-popup,
+.files-operator-popup,
+.files-calculator-popup,
+.files-loading-popup {
+  position: fixed;
+  z-index: 70;
+  top: 15%;
+  right: calc(50% - 300px);
+  flex-direction: column;
+  justify-content: space-between;
+  width: 600px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 25px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: rgba(247, 249, 252, 0.9);
+  box-shadow: 0px 0px 30px 12px rgba(255, 255, 255, 0.4);
+}
+
+.files-loading-popup {
+  display: none;
+}
+
+.files-calculator-popup {
+  display: none;
+}
+
+.files-operator-popup {
+  display: none;
+}
+
+.files-helping-popup {
+  display: none;
+}
+
+.helping_h,
+.files-helping-popup h4,
+.files-operator-popup h4,
+.files-calculator-popup h4,
+.files-loading-popup h4 {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 15px;
+  color: #4e5058;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.helping_p,
+.files-helping-popup p,
+.files-operator-popup p,
+.files-calculator-popup p,
+.files-loading-popup p {
+  @extend .block-zero;
+  margin-bottom: 30px;
+}
+.name-input-loading,
+.email-writeus-input-loading,
+.tel-writeus-input-loading,
+.write-letter-textarea-loading,
+.name-input-calculator,
+.email-writeus-input-calculator,
+.write-letter-textarea-calculator,
+.name-input-operator,
+.tel-writeus-input-operator,
+.write-letter-textarea-operator,
+.name-input-helping,
+.email-writeus-input-helping,
+.write-letter-textarea-helping {
+  font-size: 15px;
+  width: 100%;
+  padding: 15px 10px 15px 10px;
+  box-sizing: border-box;
+  border: 2px solid #eaecf0;
+  border-radius: 5px;
+}
+
+.name-input-loading:hover,
+.name-input-loading:focus,
+.name-input-loading:active,
+.email-writeus-input-loading:hover,
+.email-writeus-input-loading:focus,
+.email-writeus-input-loading:active,
+.tel-writeus-input-loading:hover,
+.tel-writeus-input-loading:focus,
+.tel-writeus-input-loading:active,
+.write-letter-textarea-loading:hover,
+.write-letter-textarea-loading:focus,
+.write-letter-textarea-loading:active,
+.name-input-calculator:hover,
+.name-input-calculator:focus,
+.name-input-calculator:active,
+.email-writeus-input-calculator:hover,
+.email-writeus-input-calculator:focus,
+.email-writeus-input-calculator:active,
+.write-letter-textarea-calculator:hover,
+.write-letter-textarea-calculator:focus,
+.write-letter-textarea-calculator:active,
+.name-input-operator:hover,
+.name-input-operator:focus,
+.name-input-operator:active,
+.tel-writeus-input-operator:hover,
+.tel-writeus-input-operator:focus,
+.tel-writeus-input-operator:active,
+.write-letter-textarea-operator:hover,
+.write-letter-textarea-operator:focus,
+.write-letter-textarea-operator:active,
+.name-input-helping:hover,
+.name-input-helping:focus,
+.name-input-helping:active,
+.email-writeus-input-helping:hover,
+.email-writeus-input-helping:focus,
+.email-writeus-input-helping:active,
+.write-letter-textarea-helping:hover,
+.write-letter-textarea-helping:focus,
+.write-letter-textarea-helping:active {
+  background-color: rgba(219, 2248, 249, 0.1);
+}
+
+.write-letter-textarea-loading,
+.write-letter-textarea-calculator,
+.write-letter-textarea-operator,
+.write-letter-textarea-helping {
+  height: 111px;
+}
+
+.files-input-loading,
+.files-input-calculator {
+  display: none;
+}
+
+.file-label-left,
+.files-calculator-popup .file-label,
+.files-loading-popup  .file-label {
+  margin-left: 245px;
+}
+
+.to-send-left,
+.files-helping-popup .to-send,
+.files-operator-popup .to-send,
+.files-calculator-popup .to-send,
+.files-loading-popup .to-send {
+  margin-left: 210px;
+}
+
+.screen-reader-response ul {
+  display: none;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 50;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  70% {
+    transform: translateX(30px);
+  }
+
+  90% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-show {
+    display: flex;
+    animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+.overlay-show {
+    display: block;
 }
 
 @media (max-width: 1366px) {
