@@ -1,13 +1,13 @@
 var linkLoading = document.querySelector('.loading');
 var popupLoading = document.querySelector('.files-loading-popup');
 var overlayLoading = document.querySelector('.overlay');
-var closeLoading = document.querySelector('.overlay');
+var closeLoading = document.querySelector('.overlay');/*
 
 var formLoading = document.querySelector('юform-loading');
 var userNameLoading = popupLoading.querySelector('[name=nameLoading]');
 var userMailLoading = popupLoading.querySelector('[name=emailLoading]');
 var userPhoneLoading = popupLoading.querySelector('[name=telLoading]');
-var userTextareaLoading = popupLoading.querySelector('[name=writeLetterLoading]');
+var userTextareaLoading = popupLoading.querySelector('[name=writeLetterLoading]');*/
 var isStorageSupport = true;
 var storage = "";
  
@@ -23,9 +23,9 @@ linkLoading.addEventListener('click', function (evt) {
     evt.preventDefault();
     popupLoading.classList.add('modal-show');
     overlayLoading.classList.add('overlay-show');
-    /*popupCalculator.classList.remove('modal-show');
+    popupCalculator.classList.remove('modal-show');
     popupOperator.classList.remove('modal-show');
-    popupHelping.classList.remove('modal-show');*/
+    popupHelping.classList.remove('modal-show');
     if (storage) {
         userNameLoading.value = storage;
         userPhoneLoading.value = storage;
@@ -42,35 +42,7 @@ closeLoading.addEventListener("click", function (evt) {
     popupLoading.classList.remove("modal-error");
 });
 
-formLoading.addEventListener("submit", function (evt) {
-    if (!userNameLoading.value || !userPhoneLoading.value) {
-        evt.preventDefault();
-        popupLoading.classList.remove("modal-error");
-        popupLoading.offsetWidth = popupLoading.offsetWidth;
-        popupLoading.classList.add("modal-error");
-        console.log("Нужно ввести ваши данные !");
-    } else {
-        if (isStorageSupport) {
-            localStorage.setItem('userNameLoading', userNameLoading.value);
-            localStorage.setItem('userMailLoading', userMailLoading.value);
-            localStorage.setItem('userPhoneLoading', userPhoneLoading.value);
-        }
-    }
-});
-
-window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popupLoading.classList.contains('modal-show')) {
-        popupLoading.classList.remove('modal-show');
-        overlayLoading.classList.remove("overlay-show");
-        popupLoading.classList.remove("modal-error");
-      }
-    }
-  });
-
-
-/*var linkCalculator = document.querySelector('.calculator');
+var linkCalculator = document.querySelector('.calculator');
 var popupCalculator = document.querySelector('.files-calculator-popup');
 var closeCalculator= document.querySelector('.overlay');
 
@@ -125,4 +97,44 @@ closeHelping .addEventListener("click", function (evt) {
     evt.preventDefault();
     popupHelping.classList.remove('modal-show');
     overlayLoading.classList.remove("overlay-show");
-});*/
+});
+
+window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popupLoading.classList.contains("modal-show")) {
+        popupLoading.classList.remove("modal-show");
+        overlayLoading.classList.remove("overlay-show");
+      }
+    }
+  });
+
+window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popupCalculator.classList.contains('modal-show')) {
+        popupCalculator.classList.remove('modal-show');
+        overlayLoading.classList.remove("overlay-show");
+      }
+    }
+  });
+
+window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popupOperator.classList.contains('modal-show')) {
+        popupOperator.classList.remove('modal-show');
+        overlayLoading.classList.remove("overlay-show");
+      }
+    }
+  });
+
+window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popupHelping.classList.contains('modal-show')) {
+        popupHelping.classList.remove('modal-show');
+        overlayLoading.classList.remove("overlay-show");
+      }
+    }
+  });
