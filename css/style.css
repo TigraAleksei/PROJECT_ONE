@@ -85,8 +85,7 @@ input[type="radio"].visually-hidden {
 .slider-two-content h2,
 .slider-three-content h2, .slider-one-content p,
 .slider-two-content p,
-.slider-three-content p, .contacts-text-address h6, .helping_p,
-.files-helping-popup p,
+.slider-three-content p, .contacts-text-address h6, .files-helping-popup p,
 .files-operator-popup p,
 .files-calculator-popup p,
 .files-loading-popup p {
@@ -1775,7 +1774,6 @@ input[type="radio"].visually-hidden {
 .files-helping-popup {
   display: none; }
 
-.helping_h,
 .files-helping-popup h4,
 .files-operator-popup h4,
 .files-calculator-popup h4,
@@ -1787,14 +1785,12 @@ input[type="radio"].visually-hidden {
   text-align: center;
   margin-top: 20px; }
 
-.helping_p,
 .files-helping-popup p,
 .files-operator-popup p,
 .files-calculator-popup p,
 .files-loading-popup p {
   margin-bottom: 30px; }
 
-.name-input-loading,
 .email-writeus-input-loading,
 .tel-writeus-input-loading,
 .write-letter-textarea-loading,
@@ -1872,7 +1868,6 @@ input[type="radio"].visually-hidden {
 .files-loading-popup .file-label {
   margin-left: 245px; }
 
-.to-send-left,
 .files-helping-popup .to-send,
 .files-operator-popup .to-send,
 .files-calculator-popup .to-send,
@@ -1978,8 +1973,6 @@ input[type="radio"].visually-hidden {
   body {
     width: 100%;
     min-width: 1366px; }
-  .header-nav-background-bottom {
-    margin-top: 19px; }
   .container {
     max-width: 1140px;
     margin: 0 auto; }
@@ -2048,7 +2041,8 @@ input[type="radio"].visually-hidden {
     top: 61px;
     left: -webkit-calc(50% - 571px);
     left: calc(50% - 571px);
-    z-index: 14; }
+    margin-top: 19px;
+    z-index: 1; }
   .overflow-one-slider {
     max-width: 100%;
     max-width: 1366px;
@@ -2124,15 +2118,14 @@ input[type="radio"].visually-hidden {
   .container {
     max-width: 960px;
     margin: 0 auto; }
-  .btn-support,
-  .arrow-top {
-    display: none; }
   .header-top .header-nav-top {
     width: 100%;
     max-width: 960px; }
   .navigation-site {
     width: 100%;
     width: 960px; }
+  .arrow-top {
+    display: none; }
   .header-nav-bottom .navigation-site > li > a {
     padding: 17px 20px 17px 20px; }
   .menu-item-216 > a,
@@ -2196,7 +2189,7 @@ input[type="radio"].visually-hidden {
     top: 61px;
     left: -webkit-calc(50% - 481px);
     left: calc(50% - 481px);
-    z-index: 14; }
+    z-index: 1; }
   .overflow-one-slider {
     max-width: 100%;
     max-width: 1024px;

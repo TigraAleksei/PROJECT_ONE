@@ -1828,7 +1828,6 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
-.helping_h,
 .files-helping-popup h4,
 .files-operator-popup h4,
 .files-calculator-popup h4,
@@ -1841,7 +1840,6 @@ input[type="radio"].visually-hidden {
   margin-top: 20px;
 }
 
-.helping_p,
 .files-helping-popup p,
 .files-operator-popup p,
 .files-calculator-popup p,
@@ -1849,7 +1847,7 @@ input[type="radio"].visually-hidden {
   @extend .block-zero;
   margin-bottom: 30px;
 }
-.name-input-loading,
+
 .email-writeus-input-loading,
 .tel-writeus-input-loading,
 .write-letter-textarea-loading,
@@ -1930,7 +1928,6 @@ input[type="radio"].visually-hidden {
   margin-left: 245px;
 }
 
-.to-send-left,
 .files-helping-popup .to-send,
 .files-operator-popup .to-send,
 .files-calculator-popup .to-send,
@@ -2011,10 +2008,6 @@ input[type="radio"].visually-hidden {
   body {
   width: 100%;
   min-width: 1366px;
-}
-
-.header-nav-background-bottom {
-  margin-top: 19px;
 }
 
 .container {
@@ -2113,7 +2106,8 @@ input[type="radio"].visually-hidden {
 .header-nav-background-bottom {
   top: 61px;
   left: calc(50% - 571px);
-  z-index: 14;
+  margin-top: 19px;
+  z-index: 1;
 }
 .overflow-one-slider {
   max-width: 100%;
@@ -2231,11 +2225,6 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
   }
 
-.btn-support,
-.arrow-top {
-  display: none;
-}
-
 .header-top .header-nav-top {
   width: 100%;
   max-width: 960px;
@@ -2243,6 +2232,10 @@ input[type="radio"].visually-hidden {
 .navigation-site {
   width: 100%;
   width: 960px;
+}
+
+.arrow-top {
+  display: none;
 }
 
 .header-nav-bottom .navigation-site > li > a {
@@ -2332,7 +2325,7 @@ input[type="radio"].visually-hidden {
 .header-nav-background-bottom {
   top: 61px;
   left: calc(50% - 481px);
-  z-index: 14;
+  z-index: 1;
 }
 .overflow-one-slider {
   max-width: 100%;

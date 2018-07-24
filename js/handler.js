@@ -1,23 +1,7 @@
 var linkLoading = document.querySelector('.loading');
 var popupLoading = document.querySelector('.files-loading-popup');
 var overlayLoading = document.querySelector('.overlay');
-var closeLoading = document.querySelector('.overlay');/*
-
-var formLoading = document.querySelector('юform-loading');
-var userNameLoading = popupLoading.querySelector('[name=nameLoading]');
-var userMailLoading = popupLoading.querySelector('[name=emailLoading]');
-var userPhoneLoading = popupLoading.querySelector('[name=telLoading]');
-var userTextareaLoading = popupLoading.querySelector('[name=writeLetterLoading]');*/
-var isStorageSupport = true;
-var storage = "";
- 
-try {
-    storage = localStorage.getItem("userNameLoading");
-    storage = localStorage.getItem("userMailLoading");
-    storage = localStorage.getItem("userPhoneLoading");
-} catch (err) {
-    isStorageSupport = false;
-} 
+var closeLoading = document.querySelector('.overlay');
 
 linkLoading.addEventListener('click', function (evt) {
     evt.preventDefault();
@@ -26,13 +10,6 @@ linkLoading.addEventListener('click', function (evt) {
     popupCalculator.classList.remove('modal-show');
     popupOperator.classList.remove('modal-show');
     popupHelping.classList.remove('modal-show');
-    if (storage) {
-        userNameLoading.value = storage;
-        userPhoneLoading.value = storage;
-        userMailLoading.focus();
-    } else {
-        userNameLoading.focus();
-    }
   });
 
 closeLoading.addEventListener("click", function (evt) {
