@@ -1791,6 +1791,7 @@ input[type="radio"].visually-hidden {
 .files-loading-popup p {
   margin-bottom: 30px; }
 
+.name-input-loading,
 .email-writeus-input-loading,
 .tel-writeus-input-loading,
 .write-letter-textarea-loading,
