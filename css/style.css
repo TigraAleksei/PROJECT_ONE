@@ -1066,7 +1066,7 @@ input[type="radio"].visually-hidden {
 
 .btn-support {
   position: fixed;
-  z-index: 15;
+  z-index: 71;
   top: 23%;
   right: 1px;
   width: 66px;
@@ -1104,6 +1104,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.3; }
 
 .arrow-top {
+  display: none;
   position: fixed;
   z-index: 17;
   bottom: 12px;
@@ -1916,44 +1917,6 @@ input[type="radio"].visually-hidden {
     -webkit-transform: translateX(0);
             transform: translateX(0); } }
 
-@-webkit-keyframes shake {
-  0%,
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px); }
-  20%,
-  40%,
-  60%,
-  80% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px); } }
-
-@keyframes shake {
-  0%,
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px); }
-  20%,
-  40%,
-  60%,
-  80% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px); } }
-
 .modal-show {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1961,10 +1924,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   -webkit-animation: bounce 0.6s;
           animation: bounce 0.6s; }
-
-.modal-error {
-  -webkit-animation: shake 0.6s;
-          animation: shake 0.6s; }
 
 .overlay-show {
   display: block; }

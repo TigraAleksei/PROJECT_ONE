@@ -1113,7 +1113,7 @@ input[type="radio"].visually-hidden {
 
 .btn-support {
   position: fixed;
-  z-index: 15;
+  z-index: 71;
   top: 23%;
   right: 1px;
   @extend .zero-list;
@@ -1144,6 +1144,7 @@ input[type="radio"].visually-hidden {
 }
 
 .arrow-top {
+  display: none;
   position: fixed;
   z-index: 17;
   bottom: 12px;
@@ -1968,35 +1969,9 @@ input[type="radio"].visually-hidden {
   }
 }
 
-@keyframes shake {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translateX(-10px);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translateX(10px);
-  }
-}
-
 .modal-show {
     display: flex;
     animation: bounce 0.6s;
-}
-
-.modal-error {
-  animation: shake 0.6s;
 }
 
 .overlay-show {
