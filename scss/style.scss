@@ -1724,8 +1724,8 @@ input[type="radio"].visually-hidden {
 
 .contacts-map li:last-child {
   position: absolute;
-  top: 55px;
-  right: 400px;
+  top: 110px;
+  right: 200px;
   z-index: 2;
 }
 
@@ -2178,11 +2178,17 @@ input[type="radio"].visually-hidden {
   height: 813px;
 }
 
+
+.files-helping-popup,
+.files-operator-popup,
+.files-calculator-popup,
+.files-loading-popup {
+  right: 100px;
+  }
+
 .contacts-map li:last-child {
-  position: absolute;
-  top: 140px;
-  right: 20px;
-  z-index: 2;
+  top: 120px;
+  right: 830px;
 }
 }
 

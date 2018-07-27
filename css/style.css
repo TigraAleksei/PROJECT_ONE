@@ -1670,8 +1670,8 @@ input[type="radio"].visually-hidden {
 
 .contacts-map li:last-child {
   position: absolute;
-  top: 55px;
-  right: 400px;
+  top: 110px;
+  right: 200px;
   z-index: 2; }
 
 .contacts-text-address {
@@ -2058,11 +2058,14 @@ input[type="radio"].visually-hidden {
     z-index: 1;
     width: 1366px;
     height: 813px; }
+  .files-helping-popup,
+  .files-operator-popup,
+  .files-calculator-popup,
+  .files-loading-popup {
+    right: 100px; }
   .contacts-map li:last-child {
-    position: absolute;
-    top: 140px;
-    right: 20px;
-    z-index: 2; } }
+    top: 120px;
+    right: 830px; } }
 
 @media (max-width: 1024px) {
   html,
